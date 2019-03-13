@@ -48,3 +48,9 @@ p {
 .main {
 	padding: 15px;
 }
+
+.section {
+  background-color: rgb(24, 228, 102);
+  color: #fff;
+  margin-bottom: 10px
+}
