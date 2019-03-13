@@ -1,11 +1,12 @@
+/* global 'site grid' */
+
 .header { grid-area: header_area; }
 .footer { grid-area: footer_area; }
 .main { grid-area: main_area; }
 .left { grid-area: left_area; }
 .right { grid-area: right_area; }
 
-
-.hg {
+.site {
 	display: grid;
 	grid-template-areas: "header_area header_area header_area"
 	                     "left_area main_area right_area"
@@ -23,7 +24,7 @@
 
 
 @media screen and (max-width: 600px) {
-	.hg {
+	.site {
 		grid-template-areas: "header_area"
 		                     "left_area"
 		                     "main_area"
@@ -37,4 +38,16 @@
 							auto 
 							30px;
 	}
+}
+
+/* element grid - area-detail */
+
+.area-detail-left { grid-area: area_detail_left; }
+.area-detail-right { grid-area: area_detail_right; }
+
+.area-detail {
+	display: grid;
+	grid-template-areas: "area_detail_left . area_detail_right";
+
+	grid-template-columns: 130px 30px auto;
 }

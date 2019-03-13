@@ -51,9 +51,21 @@ p {
 
 .section {
   background-color: rgb(24, 228, 102);
-  color: #fff;
+  /*! color: #fff; */
   margin-bottom: 10px
 }
+
+/*  */
+
+.area-detail-left {
+	text-align: right;
+}
+
+.area-detail-right {
+	text-align: left;
+}
+
+
 
 /*  */
 
