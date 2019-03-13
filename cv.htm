@@ -19,6 +19,41 @@
   <header_area class="header">The Holy Grail Layout with CSS Grid</header_area>
   <main_area class="main">
     <div class="section">
+        <button class="accordion active">Personal Information</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+    </div>
+    <div class="section">
+        <button class="accordion active">Competencies</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+      <div class="section">
+
+        <button class="accordion active">Experience</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+      <div class="section">
+
+        <button class="accordion active">Education</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+      <div class="section">
+
+        <button class="accordion active">Referees</button>
+        <div class="panel">
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+
+      <div class="section">
+
       <p>The <a href="https://en.wikipedia.org/wiki/Holy_Grail_(web_design)">Holy Grail Layout</a> using <a
           href="https://drafts.csswg.org/css-grid/">CSS Grid Layout</a>. <a
           href="http://bitsofco.de/holy-grail-layout-css-grid">Read the blog post on bitsofco.de</a></p>
@@ -55,6 +90,21 @@
   </right_area>
   <footer_area class="footer">Footer</footer_area>
 
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
-
 </html>
