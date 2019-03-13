@@ -70,6 +70,20 @@ p {
   transition: 0.4s;
 }
 
+/* Unicode character for "plus" sign (+) */
+.accordion:after {
+  content: '\02795'; 
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+.active:after {
+  content: "\2796"; 
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #ccc;
@@ -79,6 +93,7 @@ p {
 .panel {
   padding: 0 18px;
   background-color: white;
-  display: none;
+  max-height: 0;
   overflow: hidden;
-} 
+  transition: max-height 0.2s ease-out;
+}
