@@ -1,53 +1,50 @@
+html {
+	font-size: 62.5%;
+}
+
 body {
-  margin: 40px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	font-family: 'Open Sans';
 }
 
-.sidebar {
-  grid-area: sidebar;
-}
-
-.rightbar {
-  grid-area: rightbar;
-}
-
-.content {
-  grid-area: content;
+p {
+	display: block;
+	margin-bottom: 15px;
 }
 
 .header {
-  grid-area: header;
+	background-color: #ffdb3a;
+	font-size: 2rem;
+	font-weight: 700;
+	font-style: italic;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .footer {
-  grid-area: footer;
+	background-color: rgb(100, 100, 100);
+	color: #fff;
+	font-size: 1.2rem;
+	font-style: italic;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.wrapper {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-rows:    50px auto-fit 50px;
-  grid-template-columns: auto 3rem 8rem;
-  grid-template-areas:
-    "header . rightbar"
-    "content . rightbar"
-    "footer . rightbar";
-  background-color: #fff;
-  color: #444;
+.left,
+.right {
+	background-color: rgb(230, 230, 230);
+	text-align: center;
 }
 
-.box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.section {
-  background-color: rgb(24, 228, 102);
-  color: #fff;
-  margin-bottom: 10px
-}
-
-.header, .footer {
-  background-color: #999;
+.header,
+.left,
+.right,
+.main {
+	padding: 15px;
 }
