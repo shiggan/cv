@@ -57,11 +57,15 @@ p {
 
 /*  */
 
-.area-detail-left {
+.detail {
+  padding-bottom: 10px;
+}
+
+.detail-left {
 	text-align: right;
 }
 
-.area-detail-right {
+.detail-right {
 	text-align: left;
 }
 

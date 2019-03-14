@@ -6,7 +6,7 @@
 .left { grid-area: left_area; }
 .right { grid-area: right_area; }
 
-.site {
+.content {
 	display: grid;
 	grid-template-areas: "header_area header_area header_area"
 	                     "left_area main_area right_area"
@@ -24,7 +24,7 @@
 
 
 @media screen and (max-width: 600px) {
-	.site {
+	.content {
 		grid-template-areas: "header_area"
 		                     "left_area"
 		                     "main_area"
@@ -42,12 +42,12 @@
 
 /* element grid - area-detail */
 
-.area-detail-left { grid-area: area_detail_left; }
-.area-detail-right { grid-area: area_detail_right; }
+.left-detail { grid-area: left_detail_area; }
+.right-detail { grid-area: right_detail_area; }
 
-.area-detail {
+.detail {
 	display: grid;
-	grid-template-areas: "area_detail_left . area_detail_right";
+	grid-template-areas: "left_detail_area . right_detail_area";
 
 	grid-template-columns: 130px 30px auto;
 }
