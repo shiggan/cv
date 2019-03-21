@@ -17,8 +17,6 @@ p {
 	background-color: #ffdb3a;
 	font-size: 2rem;
 	font-weight: 700;
-	font-style: italic;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,15 +48,15 @@ p {
 }
 
 .section {
-  background-color: rgb(24, 228, 102);
+  /* background-color: rgb(24, 228, 102); */
   /*! color: #fff; */
   margin-bottom: 10px
 }
 
 /*  */
 
-.detail {
-  padding-bottom: 10px;
+.left-right-detail {
+
 }
 
 .detail-left {
@@ -69,12 +67,23 @@ p {
 	text-align: left;
 }
 
+/*  */
 
+.up-over-detail {
+
+}
+
+.up-detail {
+
+}
+
+.over-detail {
+
+}
 
 /*  */
 
- /* Style the buttons that are used to open and close the accordion panel */
- .accordion {
+ .section-headder {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -86,30 +95,7 @@ p {
   transition: 0.4s;
 }
 
-/* Unicode character for "plus" sign (+) */
-.accordion:after {
-  content: '\02795'; 
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-/* Unicode character for "minus" sign (-) */
-.active:after {
-  content: "\2796"; 
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }
