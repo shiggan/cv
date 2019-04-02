@@ -13,16 +13,6 @@ p {
 	margin-bottom: 15px;
 }
 
-.header {
-	background-color: #ffdb3a;
-	font-size: 2rem;
-	font-weight: 700;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
 .footer {
 	background-color: rgb(100, 100, 100);
 	color: #fff;
@@ -40,7 +30,6 @@ p {
 	text-align: center;
 }
 
-.header,
 .left,
 .right,
 .main {
@@ -82,18 +71,6 @@ p {
 }
 
 /*  */
-
- .section-headder {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
 
 .panel {
   padding: 0 18px;
