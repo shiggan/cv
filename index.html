@@ -11,32 +11,29 @@
 
   <!-- <link href="/css/reset.css" rel="stylesheet"> -->
   <link href="css/site_layout.css" rel="stylesheet">
-  <link href="css/site.css" rel="stylesheet">
   <link href="css/headder.css" rel="stylesheet">
+  <link href="css/site.css" rel="stylesheet">
 </head>
 
 <body class="content">
   <header_area class="header">
-
-    <div class="main_h">
-        <div class="row">
-            <a class="logo" href="#">Steven Higgan</a>
-            <div class="mobile-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href=".information">Information</a></li>
-                    <li><a href=".competencies">Competencies</a></li>
-                    <li><a href=".experience">Experience</a></li>
-                    <li><a href=".education">Education</a></li>
-                    <li><a href=".contact">Contact</a></li>
-                </ul>
-            </nav>
-          </div>
-        </div>
+    <div class="row">
+      <a class="logo" href="#">Steven Higgan</a>
+      <div class="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <nav>
+          <ul>
+              <li><a href=".information">Information</a></li>
+              <li><a href=".competencies">Competencies</a></li>
+              <li><a href=".experience">Experience</a></li>
+              <li><a href=".education">Education</a></li>
+              <li><a href=".contact">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
   </header_area>
 
 
@@ -411,25 +408,25 @@
     // Sticky Header
     $(window).scroll(function() {
       if ($(window).scrollTop() > 100) {
-          $('.main_h').addClass('sticky');
+          $('.header').addClass('sticky');
       } else {
-          $('.main_h').removeClass('sticky');
+          $('.header').removeClass('sticky');
       }
     });
 
     // Mobile Navigation
     $('.mobile-toggle').click(function() {
-      if ($('.main_h').hasClass('open-nav')) {
-          $('.main_h').removeClass('open-nav');
+      if ($('.header').hasClass('open-nav')) {
+          $('.header').removeClass('open-nav');
       } else {
-          $('.main_h').addClass('open-nav');
+          $('.header').addClass('open-nav');
       }
     });
 
-    $('.main_h li a').click(function() {
-      if ($('.main_h').hasClass('open-nav')) {
+    $('.header li a').click(function() {
+      if ($('.header').hasClass('open-nav')) {
           $('.navigation').removeClass('open-nav');
-          $('.main_h').removeClass('open-nav');
+          $('.header').removeClass('open-nav');
       }
     });
 
