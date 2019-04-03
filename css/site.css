@@ -25,6 +25,10 @@ p {
 	margin-bottom: 15px;
 }
 
+ul {
+  padding-left: 15px;
+}
+
 .content {
   padding: 50px 2% 250px;
 }
@@ -58,6 +62,11 @@ p {
   margin-bottom: 10px
 }
 
+.section-headder {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
 /*  */
 
 .left-right-detail {
@@ -79,7 +88,7 @@ p {
 }
 
 .up-detail {
-
+	font-weight: bold;
 }
 
 .over-detail {
