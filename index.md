@@ -12,7 +12,7 @@
 
 #### Languages and Technologies
 
-ASP.NET (MVC, WebAPI, Core), C#, SQL, Powershell, Dynamics CRM, Visual Studio Team Services, GIT, TFS, Automated Building (continuous integration), Automated Releasing (continuous delivery), Microsoft SQL Server, Devops, Agile, and Waterfall.
+ASP.NET (MVC, WebAPI, Core), C#, SQL, Powershell, Dynamics CRM, Visual Studio Team Services, GIT, TFS, Automated Building (continuous integration), Automated Releasing (continuous delivery), Microsoft SQL Server, Devops, Agile, Azure DevOps  (_azdo_) and Waterfall
 
 ### Methodologies
 
@@ -54,23 +54,23 @@ As a problem solver, I work closely with a client’s subject matter experts, an
 #### Achievements
 
 * Championing using Azure DevOps for continuous testing and delivery
-In the place of nothing Azure DevOps (azdo) allows for a simple yet powerful way to achieve a high level of automation around testing and delivering of code changes into client environments.
-Over the past few years I have pushed the support side of the business to use more of the testing and releasing functionality provided in azdo; in doing so I have been able to migrate a number of projects to use azdo for continuous-testing and releasing.
+In the place of nothing _azdo_ allows for a simple yet powerful way to achieve a high level of automation around testing and delivering of code changes into client environments.
+Over the past few years I have pushed the support side of the business to use more of the testing and releasing functionality provided in _azdo_; in doing so I have been able to migrate a number of projects to use _azdo_ for continuous-testing and releasing.
 * Championing documentation
 An opportunity has been apparent for some time for somebody to pick up around project documentation; so I decided to champion that and develop a set of documentation templates to replace our existing wiki tooling that is at the end of its life.
-Over the past year or so working with management, delivery, and support teams I have put together a set of templates which provide a skeleton for project and support teams to start from, as we are formalising on Azure DevOps Wiki pages for project documentation the templates are designed to be imported into a azdo Wiki site where the team can start filing them out from there using the templates as a guideline for the sort of information that is needed and encouraging them to write more about their solution.
+Over the past year or so working with management, delivery, and support teams I have put together a set of templates which provide a skeleton for project and support teams to start from, as we are formalising on Azure DevOps Wiki pages for project documentation the templates are designed to be imported into a _azdo_ Wiki site where the team can start filing them out from there using the templates as a guideline for the sort of information that is needed and encouraging them to write more about their solution.
 * Source control guidance (Team Foundation Server)
 I identified an opportunity to improve the process around the safe and effective use of branching strategies; once identified I spent some time putting together guidance around practices that were common elsewhere in the software-development world; we circulated these practices in our team for a number of months responding to the odd adjustment; eventually bringing them to the wider organisation as a set of minimum practices and expectations that we as a dedicated product support organisation require implemented on a project.
 * Source control guidance (GIT)
 With the organisation as a whole moving to projects source controlled via GIT, I developed guidance around some very common branching strategies and the sort of projects that best suit the common strategies.
 * Source control migration guidance
-I saw an opportunity to put together some guidance around migrating various combinations of team foundation server (on-prem or azdo) to GIT; depending on the requirements (e.g. tfs-source history) it can be simple or require some third party tools and command line scripting. For a while I was a subject matter expert and assisted several projects with the migration from TFS into GIT.
+I saw an opportunity to put together some guidance around migrating various combinations of team foundation server (on-prem or _azdo_) to GIT; depending on the requirements (e.g. tfs-source history) it can be simple or require some third party tools and command line scripting. For a while I was a subject matter expert and assisted several projects with the migration from TFS into GIT.
 
 #### Work in Progress
 
 * Working towards developing my Azure DevOps expertise
 In my functional area we spend more time making changes to systems running in production; sometimes the production environment is an on-prem server / or virtual machine, other times it is infrastructure as a service or platform as a service.
-In my quest for championing continuous delivery as default; I am spending some time learning to appreciate some of the more advanced aspects of Azure Release Manager Templates, where you specify your environment as configuration and use azdo release tasks to deploy or update your environment
+In my quest for championing continuous delivery as default; I am spending some time learning to appreciate some of the more advanced aspects of Azure Release Manager Templates, where you specify your environment as configuration and use _azdo_ release tasks to deploy or update your environment
 
 #### Responsibilities
 
@@ -91,7 +91,7 @@ As a Lead Developer
 Highlights
 
 * Large old codebases always have their own set of challenges; highlights include 'imparting the secret knowledge of how old systems are written' to the more junior team members and watching them 'get it' (mainly because I am old enough to have written code like that).
-* Originally the project used an old version of TFS (Team Foundation Server); had no branching methodology; and a large product backlog. Once we got branching under control we moved to managing the backlog in Azure Dev-Ops and eventually migrated form on prem tfs to GIT on azdo (including all 14 years of history).
+* Originally the project used an old version of TFS (Team Foundation Server); had no branching methodology; and a large product backlog. Once we got branching under control we moved to managing the backlog in Azure Dev-Ops and eventually migrated form on prem tfs to GIT on _azdo_ (including all 14 years of history).
 
 ##### Solution lead, on a Multi-Tenant Finance Web Application
 
