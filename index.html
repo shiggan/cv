@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="steven-higgan">Steven Higgan</h1>
+<h2 id="personal-information">Personal Information</h2>
+<ul>
+<li>Telephone: +64 21 936 439</li>
+<li>Email: stevenh@mad.geek.nz</li>
+<li>Github: https://github.com/shiggan</li>
+<li>Link to this document: https://shiggan.github.io/cv/</li>
+</ul>
+<h2 id="competencies">Competencies</h2>
+<h4 id="languages-and-technologies">Languages and Technologies</h4>
+<p>ASP.NET (MVC, WebAPI, Core), C#, SQL, Powershell, Dynamics CRM, Visual Studio Team Services, GIT, TFS, Automated Building (continuous integration), Automated Releasing (continuous delivery), Microsoft SQL Server, Devops, Agile, Azure DevOps  (<em>azdo</em>) and Waterfall</p>
+<h3 id="methodologies">Methodologies</h3>
+<p>Client engagements are wide ranging and varying; not all practices are relevant for all clients or systems. As functioning in a service delivery organisation, I have a lot of experience in applying just the right amount of agility in order to respond to situations as they arise.</p>
+<p>A core aspect of my approach to implementing DevOps practices in a new client or system Determining where they are at; the fundamental concepts that should be applied as a minimum; once the fundamentals are established and as a part of a continuous improvement process move the client and system to a place that is appropriate for the client and their particular needs.</p>
+<p>I have successfully implemented a number of dev-ops practices with a wide range of customer systems including.</p>
+<ul>
+<li>Automated database and website changes into release environments<br>
+Automated delivery particularly to databases implies a number of other dependent processes, starting at branching and/or feature flagging through proving a set of changes is fit for purpose. Using Azure-Devops I have developed build, test, and release pipelines to deliver changes into systems.<br>
+I enjoy demoing this process with clients new to the technology and ideas, there was a time when a client was visibly excited when I showed them the automation around approval workflows, particularly when also using the product backlog integration.</li>
+<li>Setting up continuous testing with reporting<br>
+Where needed and appropriate separating unit and integration testing (e.g. integration testing on a deployed environment); also where needed setup code coverage reporting.</li>
+<li>Establishing branching strategy<br>
+Sometimes in the role of maintaining systems you get your hands on a system where either there is no strategy in use; and the solution is not setup for continuous delivery and you are running into surprises in production, or the strategy that is being used is not working for any number of reasons.<br>
+Back in the TFS days I worked on a system that employed a 'trunk development' and 'release environment' models in short you developed large features on trunk and branched the solution for each isolated-environment you went into (user-acceptance and production) and ported fixes back and forth. The features were large and complex; acceptance testing was slow and tough; with a bit of code churn and branch maintenance stress. We ended up moving to a 'release branch' and 'feature branch' model. We worked on features on separate branches (we could have used feature-flagging); when complete merge them into trunk, and branch a release which went through user-acceptance and production environments. While we still had the odd issue with branches conflicting, we did however we managed to resolve a lot of the other issues we had.</li>
+</ul>
+<p>Baking in the tooling and measuring systems in is only part of the journey; there is also reporting on your non-functional requirements; Establishing knowledge around how the systems behave so you can work on alerting for when systems start misbehaving.</p>
+<h3 id="organisational-skills">Organisational Skills</h3>
+<ul>
+<li>As a Solution lead on a range of systems;<br>
+Maintaining close relationships with clients, growing the professional relationship with a client to a trusted advisor which enables you recommend development, and process changes in conjunction with a client’s business needs. Coordinating work for my team; from requirements gathering, specification, estimation to delivery. Applying aspects of Dev-ops ideas; and Agile principals to gain benefits that work for both the team and the client</li>
+<li>As a mentor, or technical expert on a range of systems;<br>
+Guiding team members towards developing the skills to formalize, specify, estimate, and deliver against a business requirement. Sometimes this involves guidance from a business process, system architectural or lower level implementation detail. I believe in establishing a zero-blame culture, I by default take the position that there are no 'daft questions' and everything is a learning opportunity irrespective of experience, familiarity or tenure in an organisation or system. I receive consistent positive feedback form my line managers about how I work with my more junior co-workers and help grow them into well rounded professionals.</li>
+<li>As an experienced software developer;<br>
+15 or so years is a lot of time to summarise; irrespective I have a lot of experience working independently, in teams, managing my own backlogs, managing my teams, and working against backlogs managed by other people. I spend a lot of my own time reading about ideas, code and systems as well as working on my own projects (see my github links above) which helps solidify ideas.</li>
+</ul>
+<h2 id="experience">Experience</h2>
+<h3 id="intergen-2007---present">Intergen: 2007 - Present</h3>
+<ul>
+<li>Type of Business: Professional Services, Information Technology Consultancy</li>
+<li>Role: Software developer, Application support consultant, Problem Solver</li>
+</ul>
+<p>As a problem solver, I work closely with a client’s subject matter experts, and stakeholders to shake out formal requirements, estimate, and execute the requirements until completion. Depending on the requirements I will either lead a team towards completion, execute completion myself. My role varies between backlog grooming, unblocking problems, implementation tasks, incident management, and resolution.</p>
+<h4 id="achievements">Achievements</h4>
+<ul>
+<li>Championing using Azure DevOps for continuous testing and delivery<br>
+In the place of nothing <em>azdo</em> allows for a simple yet powerful way to achieve a high level of automation around testing and delivering of code changes into client environments.<br>
+Over the past few years I have pushed the support side of the business to use more of the testing and releasing functionality provided in <em>azdo</em>; in doing so I have been able to migrate a number of projects to use <em>azdo</em> for continuous-testing and releasing.</li>
+<li>Championing documentation<br>
+An opportunity has been apparent for some time for somebody to pick up around project documentation; so I decided to champion that and develop a set of documentation templates to replace our existing wiki tooling that is at the end of its life.<br>
+Over the past year or so working with management, delivery, and support teams I have put together a set of templates which provide a skeleton for project and support teams to start from, as we are formalising on Azure DevOps Wiki pages for project documentation the templates are designed to be imported into a <em>azdo</em> Wiki site where the team can start filing them out from there using the templates as a guideline for the sort of information that is needed and encouraging them to write more about their solution.</li>
+<li>Source control guidance (Team Foundation Server)<br>
+I identified an opportunity to improve the process around the safe and effective use of branching strategies; once identified I spent some time putting together guidance around practices that were common elsewhere in the software-development world; we circulated these practices in our team for a number of months responding to the odd adjustment; eventually bringing them to the wider organisation as a set of minimum practices and expectations that we as a dedicated product support organisation require implemented on a project.</li>
+<li>Source control guidance (GIT)<br>
+With the organisation as a whole moving to projects source controlled via GIT, I developed guidance around some very common branching strategies and the sort of projects that best suit the common strategies.</li>
+<li>Source control migration guidance<br>
+I saw an opportunity to put together some guidance around migrating various combinations of team foundation server (on-prem or <em>azdo</em>) to GIT; depending on the requirements (e.g. tfs-source history) it can be simple or require some third party tools and command line scripting. For a while I was a subject matter expert and assisted several projects with the migration from TFS into GIT.</li>
+</ul>
+<h4 id="work-in-progress">Work in Progress</h4>
+<ul>
+<li>Working towards developing my Azure DevOps expertise<br>
+In my functional area we spend more time making changes to systems running in production; sometimes the production environment is an on-prem server / or virtual machine, other times it is infrastructure as a service or platform as a service.<br>
+In my quest for championing continuous delivery as default; I am spending some time learning to appreciate some of the more advanced aspects of Azure Release Manager Templates, where you specify your environment as configuration and use <em>azdo</em> release tasks to deploy or update your environment</li>
+</ul>
+<h4 id="responsibilities">Responsibilities</h4>
+<h5 id="solution-lead-property-and-land-management-system">Solution lead, Property and Land Management System</h5>
+<blockquote>
+<p>C#, ASP.NET Web-forms, SQL, Office COM Automation, Visual Studio Team Systems, Branching methodology.</p>
+</blockquote>
+<p><em>Multi-tenant district valuation and role system used by a number of agencies to record information against land and properties. Parts were website driven but also has a lot of job automation where it would pick up data form and export to a number of different places.</em></p>
+<p>As a Lead Developer</p>
+<ul>
+<li>I managed most day to day tasks including coordinating the work amongst my team; code reviews; working closely with internal owners and the client; managing expectations around completion, estimates and overrun - in between the management I also wrote my fair share of code.</li>
+<li>*Acting as a trusted advisor; I worked closely with the client’s subject matter experts to put forward ways to improve various aspects of the solution.</li>
+<li>*Working with client subject matter experts we formalize, specify, estimate, and deliver a wide range of enhancements to the solution.</li>
+<li>Acting as a technical solution expert; working closely with my team members to guide them around the solution working with them to implement specified changes.</li>
+<li>Responding to production incidents; incident management, troubleshooting and incident resolution</li>
+</ul>
+<p>Highlights</p>
+<ul>
+<li>Large old codebases always have their own set of challenges; highlights include 'imparting the secret knowledge of how old systems are written' to the more junior team members and watching them 'get it' (mainly because I am old enough to have written code like that).</li>
+<li>Originally the project used an old version of TFS (Team Foundation Server); had no branching methodology; and a large product backlog. Once we got branching under control we moved to managing the backlog in Azure Dev-Ops and eventually migrated form on prem tfs to GIT on <em>azdo</em> (including all 14 years of history).</li>
+</ul>
+<h5 id="solution-lead-on-a-multi-tenant-finance-web-application">Solution lead, on a Multi-Tenant Finance Web Application</h5>
+<blockquote>
+<p>ASP.NET, MVC, SQL, SOAP over WCF Web Services</p>
+</blockquote>
+<p><em>Multi-tenant finance brokering system; for managing finance contract lifecycles.</em></p>
+<p>As a Lead Developer</p>
+<ul>
+<li>Work with client subject matter expert, formalizing, specifying estimating and delivering work on the solution.</li>
+<li>Where there is a large amount of work I have worked in a small team to deliver the work after a formal requirements phase</li>
+</ul>
+<h5 id="contributor-subject-matter-expert-on-patient-healthcare-system">Contributor, Subject Matter Expert on Patient Healthcare System.</h5>
+<blockquote>
+<p>XAML, Windows Universal, ASP.NET MVC, ASP.NET WebAPI, SQL, Visual Studio Team Systems Continuous Integration, and Release Management pipelining (vsts devops)</p>
+</blockquote>
+<p><em>Highly interactive patient healthcare system; replacing a paper/electronic system with a purely electronic system that all patient healthcare practitioners used.</em></p>
+<p>As a Team Member</p>
+<ul>
+<li>I have worked as a part of a large agile based team on sprints delivering against a product backlog</li>
+<li>My particular focus was on preparing the solution for an eventual support and maintenance phase by a dedicated team; alongside delivering works in the product backlog my focus on preparing documentation and processors.</li>
+<li>Over my time I ended up touching most aspects of the system including release scripting, front end XAML, back end services.</li>
+</ul>
+<h5 id="application-support-consultant">Application support consultant</h5>
+<blockquote>
+<p>C#, ASP-MVC, dotnet-core, SQL, Azure DevOps</p>
+</blockquote>
+<p><em>blah</em></p>
+<p>The work I end up doing can vairy a bit wildly but can be summed up as.</p>
+<ul>
+<li>As a Senior developer I am a lead support agent on several systems for a number of clients, paying particular attention to the ones I own on a daily basis.</li>
+<li>As an incident manager; sitting in between technical resolve team and the client on high criticality incidents. My main job is to act as a conduit for comms between the technical resolve team and the client; where necessary unblock the technical-resolve team.</li>
+<li>As an incident resolver; work on the pointy end to resolve a production incident with a client; usually by acting in the technical-resolve team you are a subject matter expert on the affected system or less common the impacted technologies if the sme's are running into resolution issues.</li>
+<li>For the systems I own on a daily basis I do the day-to-day incident resolution and development; again the work can vary wildly form one system to another; but generally I do a lot of estimating, estimate-review, code review, knowledge sharing, and software development.</li>
+<li>Being one of the old hands in the organisation at one point in time or another I have had my hand in a lot of systems; had my fair share of critical incident resolution and management. Highlights would have to include the feeling you get when you are deep into resolving a critical incident; and finally get to a resolution.</li>
+</ul>
+<h3 id="kognition-consulting-limited-2005---2007">Kognition Consulting Limited: 2005 - 2007</h3>
+<ul>
+<li>Type of Business : Professional Services, Information Technology Consultancy</li>
+<li>Role : Software developer, Solution Implementer</li>
+</ul>
+<p>I Started off as an Implementer; given a specification, completed them under guidance from more senior team members. Progressed towards managing small projects; taking a formal specification, estimating and the delivering of work.</p>
+<h4 id="responsibilities">Responsibilities</h4>
+<ul>
+<li>Windows mobile subject matter expert; particularly cross platform concerns.</li>
+<li>Worked intimately with a field services organisation; their stakeholders and subject matter experts to estimate and deliver a wide range of specified enhancements to existing large cross platform systems.</li>
+<li>Worked at an Implementer level with several different clients; their stake holders and subject matter experts as a part of a larger team to deliver a number of systems and enhancements.</li>
+</ul>
+<h2 id="education">Education</h2>
+<ul>
+<li>Date: 2006</li>
+<li>Institution: Otago Polytechnic, Dunedin, New Zealand</li>
+<li>Formal Qualification: Bachelor of Information Technology (BIT)</li>
+<li>Subjects and Skills: Systems Analysis, Project Management, Quality Assurance and Software Testing, Embedded Systems, Mobile, Desktop and Web Development</li>
+</ul>
+<h2 id="references">References</h2>
+<p>Available on Request.</p>
+
+</body>
+</html>
