@@ -1,5 +1,5 @@
 
-# C.V. Steven Higgan
+# Steven Higgan
 
 ## Personal Information
 
@@ -12,7 +12,7 @@
 
 #### Languages and Technologies
 
-ASP.NET (MVC, WebAPI, Core), C#, SQL, Powershell, Dynamics CRM, Visual Studio Team Services, GIT, TFS, Automated Building (continuous integration), Automated Releasing (continuous delivery), Microsoft SQL Server, Devops, Agile, and Waterfall 
+ASP.NET (MVC, WebAPI, Core), C#, SQL, Powershell, Dynamics CRM, Visual Studio Team Services, GIT, TFS, Automated Building (continuous integration), Automated Releasing (continuous delivery), Microsoft SQL Server, Devops, Agile, and Waterfall.
 
 ### Methodologies
 
