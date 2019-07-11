@@ -1,4 +1,3 @@
-
 # Steven Higgan
 
 ## Personal Information
@@ -119,8 +118,6 @@ As a Team Member
 ##### Application support consultant
 
 > C#, ASP-MVC, dotnet-core, SQL, Azure DevOps
-
-_blah_
 
 The work I end up doing can vairy a bit wildly but can be summed up as.
 
